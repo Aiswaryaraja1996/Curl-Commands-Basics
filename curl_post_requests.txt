@@ -5,3 +5,11 @@ $ curl --data "userId=1&title=delectus aut autem&completed=false" https://jsonpl
   "completed": "false",
   "id": 201
 }
+
+$ curl -X POST --header "Content-Type:application/json" -d  "{\"userId\":1,\"title\":\"delectus aut autem\",\"completed\":\"false\"}" https://jsonplaceholder.typicode.com/todos
+{
+  "userId": 1,
+  "title": "delectus aut autem",
+  "completed": "false",
+  "id": 201
+}
